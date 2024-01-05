@@ -6,6 +6,7 @@ import pandas as pd
 class DataValidation:
     def __init__(self, config: DataValidationConfig):
         self.config = config
+        
 
     def validate_all_column(self) -> bool:
         try:
