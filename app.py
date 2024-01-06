@@ -39,7 +39,7 @@ def index():
             obj = PredictionPipeline()
             predict = obj.predict(data)
 
-            return render_template('results.html', prediction = str(predict))
+            return render_template('results.html', prediction = str(round(predict[0],4)))
 
         except Exception as e:
             print('The Exception message is: ',e)
